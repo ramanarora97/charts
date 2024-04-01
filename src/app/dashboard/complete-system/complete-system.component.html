@@ -1,0 +1,16 @@
+<div class="card">
+    <div class="card-body">
+    <div class="text-center">
+        <h4>Complete System</h4>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <ngx-echarts echarts  [options]="GaugechartOption"  style="width: 350px; height: 280px;" class="demo-chart"></ngx-echarts>
+        </div>
+        <div class="col-6">
+            <ngx-echarts echarts  [options]="LinechartOption" (chartClick)="onChartClick($event)" style="width: 350px; height: 280px;" class="demo-chart"></ngx-echarts>
+        </div>
+    </div>
+    </div>
+
+</div>
