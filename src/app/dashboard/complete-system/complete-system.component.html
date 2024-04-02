@@ -8,7 +8,7 @@
             <ngx-echarts echarts  [options]="GaugechartOption"  style="width: 350px; height: 280px;" class="demo-chart"></ngx-echarts>
         </div>
         <div class="col-6">
-            <ngx-echarts echarts  [options]="LinechartOption" (chartClick)="onChartClick($event)" style="width: 350px; height: 280px;" class="demo-chart"></ngx-echarts>
+            <ngx-echarts id="lineChart" echarts  [options]="LinechartOption" (chartClick)="onChartClick($event)" style="width: 350px; height: 280px;" class="demo-chart"></ngx-echarts>
         </div>
     </div>
     </div>

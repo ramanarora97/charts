@@ -4,7 +4,7 @@
             <h4>Complete System</h4>
         </div>
 
-        <div id="chart" style="width: 350px; height: 280px;"></div>
+        <ngx-echarts id="lineChart" echarts  [options]="LinechartOption" (chartClick)="onChartClick($event)" style="width: 350px; height: 280px;" class="demo-chart"></ngx-echarts>
     </div>
 
 

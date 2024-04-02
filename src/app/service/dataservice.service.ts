@@ -6,7 +6,6 @@ import { Observable, of } from 'rxjs';
   providedIn: 'root'
 })
 export class DataserviceService {
-
   constructor(private http: HttpClient) { }
 
   getLastSevenDaysData(): Observable<any[]> {
@@ -15,13 +14,13 @@ export class DataserviceService {
     // return this.http.get<any[]>('your-backend-api-url/last-seven-days-data');
     // For demo, returning static data
     return of([
-      { date: '2024-03-25', value: 50 },
-      { date: '2024-03-26', value: 60 },
-      { date: '2024-03-27', value: 70 },
-      { date: '2024-03-28', value: 80 },
-      { date: '2024-03-29', value: 90 },
-      { date: '2024-03-30', value: 100 },
-      { date: '2024-03-31', value: 110 }
+      { date: '25', value: 10 },
+      { date: '26', value: 15 },
+      { date: '27', value: 20 },
+      { date: '28', value: 25 },
+      { date: '29', value: 30 },
+      { date: '30', value: 40 },
+      { date: '31', value: 50 }
     ]);
   }
 

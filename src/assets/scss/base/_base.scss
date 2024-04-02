@@ -8,6 +8,27 @@ body {
   color: $white;
 }
 
+p{
+  color: $white;
+}
+
+h4{
+  color: $white;
+}
+
+button{
+  &.btn{
+
+    background-color: rgba($white,0.3);
+    color: $white;
+    width: 100%;
+    border-radius: 25px;
+  }
+
+}
+
 .card {
   background-color: $secendary-color;
+  justify-content: space-between;
+  height: calc(100% - 15px);
 }

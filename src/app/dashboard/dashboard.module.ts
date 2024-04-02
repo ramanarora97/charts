@@ -11,6 +11,7 @@ import { DafComponent } from './daf/daf.component';
 import { TanksComponent } from './tanks/tanks.component';
 import { NgxEchartsModule } from 'ngx-echarts';
 import * as echarts from 'echarts';
+import { BsModalService, ModalModule } from 'ngx-bootstrap/modal';
 
 
 @NgModule({
@@ -21,10 +22,12 @@ import * as echarts from 'echarts';
     DafComponent,
     AspComponent,
     ActComponent,
+    
   ],
   imports: [
     CommonModule,
     DashboardRoutingModule,
+    ModalModule,
     NgxEchartsModule.forRoot({
       echarts: () => import('echarts' as 'echarts')
   })
@@ -38,7 +41,8 @@ import * as echarts from 'echarts';
     AspComponent,
     ActComponent,
   ],
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
+  providers: [BsModalService]
 
 })
 export class DashboardModule { }
